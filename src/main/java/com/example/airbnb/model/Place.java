@@ -15,6 +15,8 @@ public class Place {
 	
 	private String address;
 	private String host;
+	private String contato;
+	
 	
 	@Override
 	public String toString() {
@@ -56,15 +58,22 @@ public class Place {
 	public void setHost(String host) {
 		this.host = host;
 	}
+	public String getContato() {
+		return contato;
+	}
+	public void setContato(String contato) {
+		this.contato = contato;
+	}
 	
 	
 	
-	public Place(String type, String city, String address, String host) {
+	public Place(String type, String city, String address, String host, String contato) {
 		super();
 		this.type = type;
 		this.city = city;
 		this.address = address;
 		this.host = host;
+		this.contato = contato;
 	}
 	public Place() {}
 	

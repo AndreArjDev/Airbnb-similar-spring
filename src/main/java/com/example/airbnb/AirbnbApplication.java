@@ -21,9 +21,9 @@ public class AirbnbApplication {
 public CommandLineRunner demo(PlaceRepository repository) {
   return (args) -> {
     // save a few customers
-    repository.save(new Place("Casa","Taperoá", "Duque de caxias Centro", "Ariano"));
-    repository.save(new Place("Apartamento","Porto Alegre", "Duque de caxias", "Guimarães"));
-    repository.save(new Place("Apartamento","Porto Alegre", "Duque de caxias", "Érico"));
+    repository.save(new Place("Casa","Taperoá", "Duque de caxias Centro", "Ariano","51981274365"));
+    repository.save(new Place("Apartamento","Porto Alegre", "Duque de caxias", "Guimarães","51981274365"));
+    repository.save(new Place("Apartamento","Porto Alegre", "Duque de caxias", "Érico","51981274365"));
 };
 }
 }
