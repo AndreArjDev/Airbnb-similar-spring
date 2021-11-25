@@ -34,7 +34,7 @@ public class PlaceController {
 	@CrossOrigin
 	@RequestMapping(value = "{city}", method = RequestMethod.GET, produces = "application/json")
 	public ResponseEntity<List<Place>> findByLocalidade(@PathVariable("city") String city) {
-		List<Place> places = this.placeRepository.findByCity(city);
+		List<Place> places = this.placeRepository.findByCity(city.toUpperCase());
 		if (places.isEmpty()) {
 			return new ResponseEntity<List<Place>>(places, HttpStatus.NOT_FOUND);
 		}
