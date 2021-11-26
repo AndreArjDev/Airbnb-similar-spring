@@ -27,7 +27,7 @@ public class Place {
 		return city;
 	}
 	public void setCity(String city) {
-		this.city = city;
+		this.city = city.toUpperCase();
 	}
 
 
@@ -37,6 +37,7 @@ public class Place {
 	public long getId() {
 		return id;
 	}
+	//tirar esse método, pois id não pode ser alterado
 	public void setId(long id) {
 		this.id = id;
 	}
@@ -70,7 +71,7 @@ public class Place {
 	public Place(String type, String city, String address, String host, String contato) {
 		super();
 		this.type = type;
-		this.city = city;
+		this.city = city.toUpperCase();
 		this.address = address;
 		this.host = host;
 		this.contato = contato;
